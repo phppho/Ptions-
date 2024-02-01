@@ -4,14 +4,14 @@ import httpx, os, openai
 app = FastAPI()
 
 
-TOKEN = str(os.getenv("TELEGRAM_BOT_TOKEN"))
+TOKEN = str(os.getenv("6515433115:AAGTjoOkO24oDMof_lvVk2quk19Hn86E-2U"))
 BASE_URL = f"https://api.telegram.org/bot{TOKEN}"
 
 client = httpx.AsyncClient()
 
 
 
-openai.api_key = os.getenv("OPENAI_API_KEY")
+openai.api_key = os.getenv("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")
 conversation = []
 
 class ChatGPT:  
